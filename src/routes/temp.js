@@ -35,13 +35,15 @@ export const get = async () => {
   )
   */
   console.log("temp1")
+
+  const buffer =Buffer.from(Object.values(pdf))
   return {
     headers: {
       "Content-type": "application/pdf",
 
-      // s"Content-Disposition": "attachment; filename=temp.pdf",
+      "Content-Disposition": "attachment; filename=temp.pdf",
     },
     //body: buffer,
-    body:  pdf,
+    body:  buffer
   }
 }
