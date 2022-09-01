@@ -36,7 +36,8 @@ export const get = async () => {
   return {
     headers: {
       "Content-type": "application/pdf",
-      "Content-Disposition": "attachment; filename=temp.pdf",
+
+      // s"Content-Disposition": "attachment; filename=temp.pdf",
     },
     //body: buffer,
     body:  pdf,
