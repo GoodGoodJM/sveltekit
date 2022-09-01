@@ -1,8 +1,8 @@
 
 export const get = async () => {
   console.log("temp")
-  /*
   const {generatePdf} = await import("html-pdf-node")
+  /*
   const buffer = await generatePdf(
     { url: "https://sveltekit-temp-test.vercel.app/" },
     { format: "A4" }
