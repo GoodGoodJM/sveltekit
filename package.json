@@ -11,14 +11,13 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "html-pdf-node": "^1.0.8",
+    "chrome-aws-lambda": "^10.1.0",
     "svelte": "^3.46.0"
   },
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
     "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1",
-    "events": "^3.3.0"
+    "cookie": "^0.4.1"
   }
 }
