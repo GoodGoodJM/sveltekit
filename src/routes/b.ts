@@ -3,10 +3,12 @@ import Chromium from "chrome-aws-lambda"
 import * as puppeteer from "puppeteer-core"
 
 export const get = async () => {
+    const path = await Chromium.executablePath
+    console.log(path)
     const options = process.env.AWS_REGION
     ? {
         args: Chromium.args,
-        executablePath: await Chromium.executablePath,
+        executablePath: path,
         headless: Chromium.headless
       }
     : {
