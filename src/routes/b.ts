@@ -2,9 +2,8 @@
 export const get = async () => {
     console.log("vdvdvdv")
     const Chromium = await (await import("chrome-aws-lambda")).default
+    const puppeteer = Chromium.puppeteer
     console.log("asdfdsf")
-    const puppeteer = await import( "puppeteer-core")
-    console.log("svvvvasdfdsf")
 
     const path = await Chromium.executablePath
     console.log(path)
