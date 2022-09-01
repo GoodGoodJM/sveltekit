@@ -12,6 +12,7 @@
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^17.0.0",
     "svelte": "^3.46.0"
   },
   "type": "module",

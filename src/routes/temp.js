@@ -1,5 +1,6 @@
-// import * as puppeteer from 'puppeteer-core'
 import Chromium from "chrome-aws-lambda"
+// import * as puppeteer from 'puppeteer-core'
+import * as puppeteer from "puppeteer-core"
 
 export const get = async () => {
     const options = process.env.AWS_REGION
@@ -17,7 +18,7 @@ export const get = async () => {
             ? '/usr/bin/google-chrome'
             : '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'
       }
-    const browser = await Chromium.puppeteer.launch(options)
+    const browser = await puppeteer.launch(options)
 
     const page = await browser.newPage()
     await page.setViewport({ width: 2000, height: 1000 });
