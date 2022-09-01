@@ -22,7 +22,9 @@ export const get = async () => {
 
     const page = await browser.newPage()
     await page.setViewport({ width: 2000, height: 1000 });
-    await page.goto("https://sveltekit-temp-test.vercel.app/")
+    await page.goto("https://sveltekit-temp-test.vercel.app/", {
+        waitUntil: 'networkidle0', // wait for page to load completely
+      })
   console.log("temp")
   const pdf =await page.pdf({format: 'a4'})
   await browser.close()
